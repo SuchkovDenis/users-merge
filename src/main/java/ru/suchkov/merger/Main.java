@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Необходимо ввести путь до файла!");
+            System.out.println("You must enter the path to the file!");
         }
         else {
             Map<String, Set<String>> input = read(args[0]);
             if (input == null) {
-                System.out.println("Ошибка чтения файла");
+                System.out.println("Error reading file");
             } else {
                 print(MergeUtil.merge(input));
             }
